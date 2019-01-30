@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar color="primary">
+     <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="login">
+  <ion-list class="list-form">
+    <ion-item>
+      <ion-input type="text" name="email" [(ngModel)]="email" placeholder="Email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" name="password" [(ngModel)]="password" placeholder="Password"></ion-input>
+    </ion-item>    
+  </ion-list>
+  <button ion-button color="primary" block (click)="login()">LOGIN</button>
+  <span>{{ userInfo?.fullName }}</span>
+  <div text-right margin-top margin-bottom (click)="resetPassword()">Forgot password?</div>
+  <button ion-button icon-left block color="facebook" (click)="signInWithOAuth('Facebook')" class="align-left">
+    <ion-icon name="logo-facebook"></ion-icon>
+    Signin with Facebook
+  </button>  
+  <button ion-button icon-left block color="Google" (click)="signInWithOAuth('Google')" margin-top class="align-left card">
+    <ion-icon name="logo-google"></ion-icon>
+    <span>Signin with Google</span>
+  </button>
+  <!--<button ion-button icon-left block color="light" (click)="anonymousUser()" margin-top class="align-left card">
+    <ion-icon name="person"></ion-icon>
+    <span>Signin with Anonymous</span>
+  </button>-->
+  <div class="align-bottom" padding text-center>
+    No Account? <span class="bold" (click)="register()">Register</span>
+  </div>
+</ion-content>

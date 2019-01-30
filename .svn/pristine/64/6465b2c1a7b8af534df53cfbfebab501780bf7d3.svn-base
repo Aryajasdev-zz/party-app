@@ -1,0 +1,32 @@
+page-home, .home {
+  ion-slides {
+    height: auto;
+  }
+
+  .cat-list {
+    font-size: 0.8em;
+  }
+
+  .cat-icon {
+    padding: 0.2rem;
+    font-size: 5em;
+    font-weight: bold;
+  }
+
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    top: 82%;
+    background-color:#000;opacity:0.6;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+
+}
+

@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-navbar ion-text color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Checkout</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="common-bg cart"> 
+  <form (ngSubmit)="submitForm(cform.form)" #cform="ngForm">
+    <ion-list inset>   
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="billing.cardInit" name="cardInit" #cardInit="ngModel" required placeholder="Initial"></ion-input> 
+        <div *ngIf="cardInit.touched && !cardInit.valid">Initial is required.</div>      
+      </ion-item>   
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="billing.cardName" name="cardName" #cardName="ngModel" required minlength="3" placeholder="Name"></ion-input> 
+        <div *ngIf="cardName.touched && !cardName.valid">Name is required.</div>          
+      </ion-item>
+       <ion-item>
+        <ion-input type="text" [(ngModel)]="billing.cardHno" name="cardHno" #cardHno="ngModel" required placeholder="House/Flat No"></ion-input>   
+        <div *ngIf="cardHno.touched && !cardHno.valid">House/Flat no is required.</div>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="billing.cardAddress" name="cardAddress" #cardAddress="ngModel" required minlength="3" placeholder="Address"></ion-input>   
+        <div *ngIf="cardAddress.touched && !cardAddress.valid">Address is required.</div>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text"[(ngModel)]="billing.cardCity" name="cardCity" #cardCity="ngModel" required minlength="3" placeholder="City"></ion-input> 
+        <div *ngIf="cardCity.touched && !cardCity.valid">City is required.</div> 
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="billing.cardCounty" name="cardCounty" #cardCounty="ngModel" placeholder="County"></ion-input>           
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="billing.cardPostcode" name="cardpostcode" #cardPostcode="ngModel" required minlength="3" placeholder="Postcode"></ion-input> 
+        <div *ngIf="cardPostcode.touched && !cardPostcode.valid">Postcode is required.</div>   
+      </ion-item>
+      <ion-item>
+        <ion-input type="email" [(ngModel)]="billing.cardEmail" name="cardEmail" #cardEmail="ngModel" required placeholder="Email"></ion-input>   
+        <div *ngIf="cardEmail.touched && !cardEmail.valid">Email is required.</div>  
+      </ion-item>     
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="billing.cardPhone" name="cardPhone" #cardPhone="ngModel" required placeholder="Phone"></ion-input>   
+        <div *ngIf="cardPhone.touched && !cardPhone.valid">Email is required.</div>  
+      </ion-item>
+    </ion-list>  
+    <ion-list radio-group [(ngModel)]="billing.isdelAddress" name="isdelAddress" #isdelAddress="ngModel"  (ionChange)="onSelected($event)">
+      <ion-list-header>
+        Is Delivery Address Different
+      </ion-list-header>
+      <ion-item>
+        <ion-label>No</ion-label>
+        <ion-radio value="No"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Yes</ion-label>
+        <ion-radio value="Yes"></ion-radio>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="delivery.cardName" name="delName" #delName="ngModel" placeholder="Contact Name"></ion-input>       
+      </ion-item>  
+       <ion-item>
+        <ion-input type="text" [(ngModel)]="delivery.cardHno" name="delHno" #delHno="ngModel" placeholder="House/Flat No"></ion-input>   
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="delivery.cardAddress" name="deladdress" #delAddress="ngModel" placeholder="Address"></ion-input>   
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="delivery.cardCity" name="delCity" #delCity="ngModel" placeholder="City"></ion-input>   
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="delivery.cardCounty" name="delCounty" #delCounty="ngModel" placeholder="County"></ion-input>   
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="delivery.cardPostcode" name="delPostcode" #delPostcode="ngModel" placeholder="Postcode"></ion-input>   
+      </ion-item>    
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="delivery.cardPhone" name="delPhone" #delPhone="ngModel" placeholder="Phone"></ion-input>   
+      </ion-item>
+    </ion-list>     
+    <div class="card" padding>
+      <div>
+        <span class="pull-left">
+          <span class="bold" ion-text color="danger">Total : {{total | currency:'GBP':true}}</span>
+        </span>
+        <span class="pull-right">
+          <button ion-button type="submit" [disabled]="!cform.valid" ion-text>Pay Now</button>
+        </span>
+        <div class="clear"></div>
+      </div>
+   </div>      
+  </form>
+</ion-content>

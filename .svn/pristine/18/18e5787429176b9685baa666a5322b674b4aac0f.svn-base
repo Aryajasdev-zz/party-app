@@ -1,0 +1,67 @@
+import {Component} from '@angular/core';
+import {NavController, ModalController} from 'ionic-angular';
+
+import {CartService} from '../../services/cart-service';
+import {CheckoutPage} from "../checkout/checkout";
+import {DeliveryPage} from "../delivery/delivery";
+
+@Component({
+  selector: 'page-cart',
+  templateUrl: 'cart.html'
+})
+export class CartPage {
+  public items: any;  
+  public subtotal: number;
+  public totqty:number;
+  public total: number;
+  public pid:number;
+  public postage:number;   
+
+  constructor(public nav: NavController, public cartService: CartService, public modalCtrl: ModalController) {   
+    this.updatecartservice();
+  } 
+
+  updatecartservice(){
+    this.items = this.cartService.getItems();
+    this.postage = this.cartService.getPostage();
+    this.cartService.getPostageID().then(val => this.pid = val);    
+    this.cartService.getTotQty().then(val => this.totqty = val);
+    this.cartService.getSubtotal().then(val => this.getTotal(val));    
+  }
+
+  getTotal(subtotal){
+    this.subtotal = subtotal;   
+    this.total = this.subtotal + this.postage;
+  }
+
+  update(sign:string, itm){    
+    this.cartService.updateQty(itm,sign);  
+    this.updatecartservice();
+  }
+  
+  remove(itm){
+    this.cartService.removeItem(itm);    
+    this.updatecartservice();
+  }
+  
+  Checkout() {   
+    this.nav.push(CheckoutPage);
+  }
+
+  applyDelivery(delivery){      
+    this.cartService.setPostageID(delivery.postageid);
+    this.cartService.setPostage(delivery.postage);
+    this.postage = delivery.postage;        
+    this.updatecartservice();
+  }
+
+  Changedelivery(){
+    let modal = this.modalCtrl.create(DeliveryPage);
+    modal.onDidDismiss(confirm => {
+      if (confirm) {          
+        this.applyDelivery(confirm);
+      } 
+    });
+    modal.present();
+  }   
+}

@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar ion-text color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{orderid}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="common-bg cart"> 
+<div class="card">
+  <ion-grid>         
+    <ion-row>
+      <ion-col width-50>Name</ion-col>
+      <ion-col width-50>{{Order?.name}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50>Email</ion-col>
+      <ion-col width-50>{{Order?.custemail}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50>Phone</ion-col>
+      <ion-col width-50>{{Order?.custphone}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>Billing Address</ion-col>
+      <ion-col [innerHtml]="Order?.custadd"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>Delivery Address</ion-col>
+      <ion-col [innerHtml]="Order?.deladd"></ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="card">
+    <ion-list class="list-full-border" no-margin>
+      <ion-item class="product" *ngFor="let itm of Order?.items; let i = index">
+        <ion-thumbnail item-left><img src="{{ itm?.img }}"></ion-thumbnail>
+        <div text-wrap>{{ itm?.prodname }}</div>
+        <div class="text-sm">
+          <span ion-text color="gray">{{ itm?.prodsize }}</span><br/>
+          <span ion-text color="gray">Price : {{ itm.price | currency:'GBP':true }} @ Each</span>
+        </div>
+        <div padding-bottom>
+          <span class="pull-right">{{ itm.price * itm.qty | currency:'GBP':true }}</span>
+          <div class="clear"></div>
+        </div>  
+      </ion-item>   
+    </ion-list>
+  </div>  
+  <div class="card ship-toggle">
+    <div class="item">
+      <b>Sub Total</b>
+      <div class="pull-right">{{ Order?.amount-Order?.postage | currency:'GBP':true }}</div>
+    </div>
+    <div class="item">
+      <b>{{Order?.postname}}</b>
+      <div class="pull-right">{{ Order?.postage | currency:'GBP':true }}</div>
+    </div>
+    <div class="item">
+      <b>Total</b>
+      <div class="pull-right">{{ Order?.amount | currency:'GBP':true }}</div>
+    </div>
+  </div>
+</div>     
+</ion-content>

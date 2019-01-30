@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar ion-text color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Categories</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="goToCart()">
+        <ion-icon name="cart"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="categories">
+  <ion-list>
+    <div *ngFor="let category of categories">
+      <ion-list-header (click)="toggleDetails(category)">{{category?.name}}
+        <ion-icon ion-text color="primary" item-right [name]="category?.icon"></ion-icon>
+      </ion-list-header>
+      <div *ngIf="category?.isshown">
+        <ion-item *ngFor="let scat of category?.subcats">
+          <ion-thumbnail item-left>
+            <img src="{{scat?.catimg}}">
+          </ion-thumbnail>
+          <h2>{{scat?.name}}</h2>
+          <button ion-button clear item-right (click)="showMe(scat?.url, scat?.name)">View</button>
+        </ion-item>
+      </div>
+    </div>
+  </ion-list>
+
+</ion-content>

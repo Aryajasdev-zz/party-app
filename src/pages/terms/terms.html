@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-navbar ion-text color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title> Terms and Condition </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>  
+  <ion-card>
+    <ion-card-header>
+      <h2>Privacy</h2>
+    </ion-card-header>
+    <ion-card-content>
+      <p>In order for us to process your purchases, we will need the following information:</p>
+      <p>Name</p>
+      <p>Address</p>
+      <p>Phone Number</p>      
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+       <h2>Email</h2>
+    </ion-card-header>
+    <ion-card-content>
+       <p>We will use your personal data in accordance with the Data Protection Act (1998). We will not email you in the future unless you have given us your consent except loyalty discount offers or feedback of our service.
+        Your Credit/Debit card details will not be required by us: Realex will process the payment on our behalf and will notify us when your payment has been made. Please see their terms and conditions.</p>      
+    </ion-card-content>
+  </ion-card>  
+  <ion-card>
+    <ion-card-header>
+       <h2>Pricing</h2>
+    </ion-card-header>
+    <ion-card-content>
+        <p>All product prices and delivery charges are inclusive of VAT. The price you see at checkout will be the price you pay.</p>
+    </ion-card-content>
+  </ion-card>      
+  <ion-card>
+    <ion-card-header>
+       <h2>Products</h2>
+    </ion-card-header>
+    <ion-card-content>
+        <p>The manufacturers may change product specifications, or we may not be able to supply the required product. In such cases, we will contact you to arrange for alternatives, and only proceed after confirmation.</p>
+    </ion-card-content>
+  </ion-card>      
+  <ion-card>
+    <ion-card-header>
+       <h2>Payment</h2>
+    </ion-card-header>
+    <ion-card-content>
+        <p>All goods must be paid for prior to dispatch. Payment can be made by Credit/Debit Cards via Realex or PayPal account. We will only charge you for the goods dispatched to you. Any order paid by PayPal with pending payment status will be delivered only after payment confirmed by PayPal.</p>
+    </ion-card-content>
+  </ion-card>        
+  <ion-card>
+    <ion-card-header>
+       <h2>Deliveries</h2>
+    </ion-card-header>
+    <ion-card-content>
+        <p>Any order placed before 3pm Monday to Friday is sent on the same day and will be delivered according to the delivery method chosen. Orders made after 3pm may be sent on the same day or else on the following working day. The delivery times are as follows:</p>
+    </ion-card-content>
+  </ion-card>         
+  <ion-list no-margin class="list-full-border list-products list">
+    <ion-item class="product"  *ngFor="let item of delivery">
+      <h2 class="prod-name">{{ item.method }}</h2>
+      <p>{{ item.message }}</p>
+      <div>        
+        <span ion-text color="dark">{{ item.amt | currency:'GBP':true }}</span>
+      </div>      
+    </ion-item>
+  </ion-list> 
+  <ion-card>   
+    <ion-card-content>
+      <p>For any other delivery option, including outside the United Kingdom, please contact us via our Contact page, or phone us on 020 8770 0154, Monday to Friday between 9am and 5pm.</p>      
+      <p>If you have chosen Next Day or Saturday Delivery option you will be given a tracking number with all the details regarding delivery (a valid email address is required). Please visit the APC Overnight (courier) or Royal Mail to track the progress of your parcel.</p>
+      <p>The UKMail courier will attempt the delivery twice. Royal Mail will only attempt the delivery once. If no success, your parcel will be held at your local UKMail depot or at your local Royal Mail collection office for three days. If you no longer require the parcel and wish us to issue a refund, please collect the parcel from your local UKMail depot or Royal Mail collection office and return it to us at your own cost. If you fail to return the parcel yourself, UKMail and Royal Mail will eventually return it to us within 28 days. Their charges will be deducted from your final refund. Initial postage is never subject to refund.</p>
+    </ion-card-content>
+  </ion-card>    
+  <ion-card>
+    <ion-card-header>
+       <h2>Returns</h2>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Your rights to return goods are protected under the EU Distance Selling Directive. Our return policies are as follows:</p>      
+      <p>Damage in Transit - If you have received any damaged goods you need to inform us as soon as possible, and no later than three working days after receiving your order. You must also keep the packaging to allow for claims against the carrier. After you contact us, we will make a claim against the carrier and arrange for the damaged items to be replaced. We will provide (where possible) a link to Royal Mail web site where customer can generate and print a free return label. After receiving the goods, we will inspect them and assess the damage. If the product(s) are in perfect condition, the customer will be liable for the cost of the return and the initial postage charge.</p>
+      <p>Any return must be unused, and include all the original packaging and tags. Please email us before returning goods to notify us of the intent and reason for return. We will not be able to refund items if any tags have been removed. Refunds are for the product(s) amount only. Goods must be sent back to us within 7 days of receiving them. We recommend you use a recorded service where you can provide a proof of postage.</p>
+      <p>For bulk quantity orders over £100, there is a 25% return policy. That means that only a quarter of the order value will be accepted as a return. If there was a discount applied and the value of the return exceeds the discount value, that will also be deducted from the refund amount. For more information, please contact our customer services.</p>
+    </ion-card-content>
+  </ion-card>        
+  <ion-card>
+    <ion-card-header>
+      <h2>Non-Delivery</h2>
+    </ion-card-header>
+    <ion-card-content>
+        <p>If your goods don't arrive within 7 days of your order, please notify us, as claims need to be made within 10 working days of despatch.</p>
+    </ion-card-content>
+  </ion-card>       
+</ion-content>

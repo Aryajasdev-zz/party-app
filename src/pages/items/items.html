@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar ion-text color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ catname }}</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="goToCart()">
+        <ion-icon name="cart"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>  
+  <!--List of items-->
+  <ion-list no-margin class="list-full-border list-products" [ngClass]="{'grid': viewType == 'grid', 'list': viewType == 'list'}">
+    <ion-item class="product"  *ngFor="let item of items" (click)="viewItem(item.url)">
+      <ion-thumbnail item-left>
+        <img class="prod-img" src="{{item.img}}">
+      </ion-thumbnail>
+      <h2 class="prod-name">{{ item.name }}</h2>
+      <p>{{ item.descr }}</p>
+      <div>
+        <span style='color:red;text-decoration:line-through' ion-text color="danger" *ngIf="item.sales_offer==1 && item.retail_original_price>0">{{ item.retail_original_price | currency:'GBP':true }}</span>
+        <span ion-text color="dark">{{ item.price | currency:'GBP':true }}</span>
+      </div>      
+    </ion-item>
+  </ion-list> 
+</ion-content>

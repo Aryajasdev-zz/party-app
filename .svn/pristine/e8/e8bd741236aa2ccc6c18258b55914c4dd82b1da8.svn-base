@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-navbar ion-text color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title> Product Details </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="goToCart()">
+        <ion-icon name="cart"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content class=" common-bg">
+  <div class="card light-bg">
+    <!-- slider on top-->
+    <ion-card>
+        <img src="{{item?.img}}"/>
+    </ion-card>
+
+    <div text-center class="border-bottom">
+      <p>{{ item?.name }} {{item?.prodid}}</p>
+      <p>{{ item?.descr }}</p>
+      <h1 class="price" style='color:red;text-decoration:line-through'  ion-text color="danger" margin-top *ngIf="item?.sales_offer==1 && item?.retail_original_price>0">
+        {{ item?.retail_original_price | currency:'GBP':true}}
+      </h1>
+      <h1 class="price" ion-text color="dark" margin-top>{{ item?.shopprice | currency:'GBP':true }}</h1>
+    </div>
+    <ion-list no-padding>
+      <ion-item *ngIf="item?.sizes?.length<=1">
+        <ion-label>Size Available : {{item?.sizes[0]?.sizename}}</ion-label>
+      </ion-item>
+      <ion-item *ngIf="item?.sizes?.length>1">
+        <ion-label>Sizes</ion-label>
+        <ion-select [(ngModel)]="prodsizes" multiple="false" okText="Okay!" (ionChange)="onChange($event)">
+          <ion-option *ngFor="let size of item?.sizes" [value]="size">{{size.sizename}}</ion-option>
+        </ion-select>
+      </ion-item>      
+    </ion-list>    
+    <ion-grid no-padding>  
+      <ion-row> 
+        <ion-col width-20>
+          <button ion-button color="dark" [disabled]="qty==1" (click)="update('-')" icon-right>
+            <ion-icon name='remove-circle' is-active="false"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col style="padding-top:20px" width-10>
+          <span>{{qty}}</span>
+        </ion-col>
+        <ion-col width-20>
+          <button ion-button color="dark" (click)="update('+')" icon-left>
+            <ion-icon name='add-circle' is-active="false"></ion-icon>
+          </button>  
+        </ion-col>
+        <ion-col width-50>
+          <button ion-button block class="btn-add-cart" (click)="addtoCart(item,prodsizes,qty)">ADD TO CART</button>
+        </ion-col>            
+      </ion-row>        
+    </ion-grid>
+  </div>
+  <!--Description-->
+  <div class="card light-bg" margin-top>
+    <div class="border-bottom" padding>Item Description</div>
+    <div padding>{{ item?.pssdes }}</div>
+  </div>
+  <div class="card light-bg" margin-top>
+    <div class="border-bottom" padding>Item Specification</div>
+    <div padding>{{ item?.specification }}</div>
+  </div>
+  <div class="card light-bg" margin-top>
+    <div class="border-bottom" padding>Item Delivery</div>
+    <div padding>{{ item?.delivery }}</div>
+  </div>
+</ion-content>

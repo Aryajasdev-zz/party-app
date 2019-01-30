@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-navbar ion-text color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Checkout</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="common-bg cart"> 
+<div class="card">    
+    <ion-grid>
+         <ion-row>
+            <ion-col width-50>OrderID</ion-col>
+            <ion-col width-50>{{orderid}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col width-50>Postage</ion-col>
+            <ion-col width-50>{{postage | currency:'GBP':true}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col width-50>Total</ion-col>
+            <ion-col width-50>{{total | currency:'GBP':true}}</ion-col>
+        </ion-row>
+    </ion-grid>
+</div>
+<div class="card">
+    <button ion-button color="dark" (click)="payPal()">
+        <ion-icon ios="ios-cart" md="md-cart"></ion-icon>&nbsp;Pay with Paypal
+        <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward"></ion-icon>
+    </button>
+    <button ion-button type="submit" (click)="payCard()" ion-text id="payButtonId">
+        <ion-icon ios="ios-cart" md="md-cart"></ion-icon>&nbsp;Pay By Card
+        <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward"></ion-icon>
+    </button>
+</div>    
+<!--
+<ion-list radio-group [(ngModel)]="payType" name="paytype"  (ionChange)="onSelected($event)">
+    <ion-list-header>Payment Type</ion-list-header>
+    <ion-item>
+        <ion-label>Card</ion-label>
+        <ion-radio value="card"></ion-radio>
+    </ion-item>
+    <ion-item>
+        <ion-label>Paypal</ion-label>
+        <ion-radio value="paypal"></ion-radio>
+    </ion-item>      
+</ion-list>
+<div class="card" *ngIf="isCard==true">
+<form (ngSubmit)="submitForm(cform.form)" #cform="ngForm">
+    <ion-list inset>   
+        <input type="hidden" [(ngModel)]="carddata.apikey" name="apikey" #apikey="ngModel"/>
+        <input type="hidden" [(ngModel)]="carddata.total" name="total" #total="ngModel"/>
+        <input type="hidden" [(ngModel)]="carddata.orderid" name="orderid" #orderid="ngModel"/>
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="carddata.cardName" name="cardName" #cardName="ngModel" required placeholder="Card Name"></ion-input> 
+        <div *ngIf="cardName.touched && !cardName.valid">Card Name is required.</div>      
+      </ion-item>   
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="carddata.cardNo" name="cardNo" #cardNo="ngModel" required minlength="16" maxlength="16" placeholder="Card Number"></ion-input> 
+        <div *ngIf="cardNo.touched && !cardNo.valid">Card Number is required.</div>          
+      </ion-item>
+       <ion-item>
+        <ion-input type="text" [(ngModel)]="carddata.cardMM" name="cardMM" #cardMM="ngModel" required minlength="2" maxlength="2" placeholder="Card Expiry Month"></ion-input>   
+        <div *ngIf="cardMM.touched && !cardMM.valid">Card Expiry Month is required.</div>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="carddata.cardYY" name="cardYY" #cardYY="ngModel" required minlength="2" maxlength="2" placeholder="card Expiry Year"></ion-input>   
+        <div *ngIf="cardYY.touched && !cardYY.valid">card Expiry Year is required.</div>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text"[(ngModel)]="carddata.cardCVC" name="cardCVC" #cardCVC="ngModel" required minlength="3" maxlength="3" placeholder="card CVC"></ion-input> 
+        <div *ngIf="cardCVC.touched && !cardCVC.valid">Card CVC is required.</div> 
+      </ion-item>      
+    </ion-list>        
+    <div class="card" padding>              
+        <span class="pull-right">
+            <button ion-button type="submit" [disabled]="!cform.valid" ion-text>PLACE ORDER</button>
+        </span>
+        <div class="clear"></div>    
+    </div>      
+</form>
+</div>
+<div *ngIf="isCard==false"></div>
+-->
+</ion-content>

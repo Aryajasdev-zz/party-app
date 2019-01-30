@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\myApps2\\partysuperstores\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\xml\\provider_paths.xml",
+        "source": "C:\\myApps2\\partysuperstores\\platforms\\android\\res\\xml\\provider_paths.xml"
+    },
+    {
+        "merged": "C:\\myApps2\\partysuperstores\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\xml\\config.xml",
+        "source": "C:\\myApps2\\partysuperstores\\platforms\\android\\res\\xml\\config.xml"
+    }
+]

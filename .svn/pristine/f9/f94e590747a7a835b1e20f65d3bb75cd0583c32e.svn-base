@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-config\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-config-10.0.1_6e4af02c6781fc2152dab635b35d36533e39c3d1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\io.card\android-sdk\5.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f19e5ca63dd8a93c701b5586ffd1295d7e6e54f5">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\io.card-android-sdk-5.4.0_dd07b4e35724dfcc134a220160b730720fd91952.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.4.0_28def9c2ff472793908ac792a373fc6fdcefc290.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\libs\internal_impl-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\internal_impl-24.1.1_6573d85a14a1a7610e967979c85413ae8badd0c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\support-annotations-24.1.1_11a98e338cda4beef8c90d09eb330a7046f9c9dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\com.paypal.sdk\paypal-android-sdk\2.15.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="09c5ca6c0b93b5841d4b953d90d269c8743a1572">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\com.paypal.sdk-paypal-android-sdk-2.15.3_c0a7b4e85087ec07a53e70b06817092cf193fa5b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Praveen Kumar\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\okhttp-3.6.0_82b0779c12559bdc61f4ff9f4fe1f69749c2d36e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Praveen Kumar\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_d5a60167b8b81dc182feddc1d71d673bb393c3c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.1.1_5457eacfdfe84837e2d9c721397a69ff54dbcadd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\libs\sqlite-connector.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="76169ab23a4f939925491c6fe186749da5a56ee9">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\sqlite-connector_c8d59717295b92035468f11a6562c514873b4983.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b346a5d3fc5d6d1d36c6262c8cc865b76df9f40c">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\me.leolin-ShortcutBadger-1.1.4_1558e33476bbc4efbdd0b36593a68ca8b4b5b570.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-crash-10.0.1_9e2e3a158b45fa90b04d34c9580695b6002c63f8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="79d68b70e2f02123c5a1205261f8c9cc038870de">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_4e7f5f9d24ac86d26fffa49bbd6af2f29eb4bc3b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-10.0.1_5a9900caece42467ce27c28ebfcb17f68025697c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.0.1_80d2eae2f8b8fbe7cccf57817b488c1a49fda498.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\com.android.support\customtabs\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-customtabs-23.4.0_de402d72633b931da46bf54ea4421cf1706a3b08.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.14.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="42a3ae86dd3ae2876d3e95c2e6e104ae57a50a65">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-android-sdk-4.14.1_806205dfbbd428a3f0a59b7e65d8e1714862909a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-10.0.1_3293ab2a638e8e33c8373cd4f998e195dc1e6bfc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-10.0.1_e0810a448515cefd86cabc5775a40789d23ee89f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.0.1_1085869aa37b7086d7b67bb9495df77b975f96a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Praveen Kumar\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\bolts-applinks-1.4.0_ed904d9edf47b020015fced29e622cf3cecb581b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-messaging-10.0.1_b80dbfb2005ff1ce17fe2ad65ecbc7fd64d09590.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Praveen Kumar\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.11.0\840897fcd7223a8143f1d9b6f69714e7be34fd50\okio-1.11.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\okio-1.11.0_672227d32e3dd8dff013803c6c9732c870471cdd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-10.0.1_1f95bd1eccf1db22269bc4a1a942124e8667e4df.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\myApps2\partysuperstores\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="C:\myApps2\partysuperstores\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.0.1_124cd068a4c85f9c3d78722eba084afd71a3ad62.jar" />
+    </item>
+
+</items>
